@@ -5,3 +5,43 @@ UserPost post = new UserPost {
     CurrencyType = 1, //货币类型，查看货币类型枚举
     LanguageType = 1, //用户默认的语言类型，查看语言类型枚举
 };
+UserPost post = new UserPost {
+    UserName = "1234567890", //代理商手里的用户id，不能重复的
+    PartnerID = 100, //写死的固定值，代理商ID
+    SubID = 1, //写死的固定值，代理商的子代理号
+};
+BetPost post = new BetPost {
+    SportID = 10, //体育类型id
+    UserName = "1409261", //代理商手里的用户id，不能重复的
+    PartnerID = 100, //写死的固定值，代理商ID
+    SubID = 1, //写死的固定值，代理商的子代理号
+                    BetMultis = new List<BetMultiPost> { //多个过关方式的数组
+        new BetMultiPost{ BetMulti = 1, BetAmount = 100 }, //过关类型：BetMulti.单注 和金额100元
+        new BetMultiPost{ BetMulti = 2, BetAmount = 50 },  //过关类型：BetMulti.二串一 和金额50元
+        new BetMultiPost{ BetMulti = 3, BetAmount = 10 }  //过关类型：BetMulti.三串一 和金额10元
+    },
+                    BetItems = new List<BetItemPost> {
+        new BetItemPost {
+            MatchID = "39F33C5E-7D07-4E52-BD47-69807EC2937D", //比赛guid
+            GameID = "0D71AA5D-EC6A-4C8F-9E6D-1A6055B981BA", //玩法guid
+            OptionID = "6E1A716A-749F-4FAD-A873-3934B56DE6B5", //投注项guid
+            BetValue = "+1", //投注项的盘口，投注时后端会验证如果盘口变化则投注失败并返回提示信息
+            BetOdds = 1.94 //赔率，投注时后端会验证如果赔率变化则投注失败并返回提示信息
+        },
+        new BetItemPost {
+            MatchID = "151894B6-CB60-40CB-ACA2-7126C5324819", //比赛guid
+            GameID = "7BE4C072-3341-4AD4-B118-7C356182D25F", //玩法guid
+            OptionID = "4292B4E4-2261-481F-8E43-723060A60ABC", //投注项guid
+            BetValue = "-1.5", //投注项的盘口，投注时后端会验证如果盘口变化则投注失败并返回提示信息
+            BetOdds = 1.82 //赔率，投注时后端会验证如果赔率变化则投注失败并返回提示信息
+        },
+        new BetItemPost {
+            MatchID = "2CCF39C0-C434-4618-A8C6-B3B80B5505CC", //比赛guid
+            GameID = "8F9997DE-4C0B-4A78-B254-507CC493E110", //玩法guid
+            OptionID = "720456FB-8C3E-4C1E-9D1B-C181706FBC89", //投注项guid
+            BetValue = "-1.5", //投注项的盘口，投注时后端会验证如果盘口变化则投注失败并返回提示信息
+            BetOdds = 1.92 //赔率，投注时后端会验证如果赔率变化则投注失败并返回提示信息
+        }
+    }
+};
+{"SportID":10,"UserName":"1409261","PartnerID":100,"SubID":1,"BetMultis":[{"BetMulti":1,"BetAmount":100},{"BetMulti":2,"BetAmount":50}]
