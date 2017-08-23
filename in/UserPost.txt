@@ -1,0 +1,7 @@
+UserPost post = new UserPost {
+    UserName = "1234567890", //代理商手里的用户id，不能重复的
+    PartnerID = 100, //写死的固定值，代理商ID
+    SubID = 1, //写死的固定值，代理商的子代理号
+    CurrencyType = 1, //货币类型，查看货币类型枚举
+    LanguageType = 1, //用户默认的语言类型，查看语言类型枚举
+};
