@@ -68,3 +68,4 @@ BetSnapshot 	string 	No 	投注的文字描述，可以贴给用户看的那种�
 
 
 {"currencyType":"1","languageType":"1","partnerID":"100","subID":"1","userName":"1000236807"}
+{"betItems":[{"betOdds":"1.96","betValue":"-1","gameID":"0d71aa5d-ec6a-4c8f-9e6d-1a6055b981ba","matchID":"39f33c5e-7d07-4e52-bd47-69807ec2937d","optionID":"1ad795fd-d85d-4cca-9692-db538edc6adc"},{"betOdds":"1.85","gameID":"2efd335f-ce19-4bb9-abd5-54afc947f5c8","matchID":"39f33c5e-7d07-4e52-bd47-69807ec2937d","optionID":"4a72c747-a469-4243-9dda-c3895721a5b5"}],"betMultis":[{"betAmount":"10","betMulti":"1"},{"betAmount":"10","betMulti":"1"}],"sportID":"10","userName":"100000"}
