@@ -44,7 +44,10 @@ BetPost post = new BetPost {
         }
     }
 };
-{"Result":1,"Message":"操作成功","Orders":[{"BetID":"9f818994-3fc5-4016-a5e5-85864ce654f3","BetLongID":201708231525521057,"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.94,"BetSnapshot":"山东鲁能 +1"},{"BetID":"7b61668d-544e-481c-b155-7bd4e1732e72","BetLongID":201708231525521057,"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.82,"BetSnapshot":"广州恒大 -1.5"},{"BetID":"e2af1b2f-f10f-4aa9-a8b9-771e856b8859","BetLongID":201708231525521057,"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.92,"BetSnapshot":"广州富力 -1.5"},{"BetID":"13e70b6b-645e-4b0b-892e-834f19e3499e","BetLongID":201708231525521057,"BetMulti":2,"BetUnit":3,"BetAmount":150,"BetOdds":10.7500,"BetSnapshot":"[\"山东鲁能 +1\",\"广州恒大 -1.5\",\"广州富力 -1.5\"]"},{"BetID":"9e0e1cf7-d613-4fbf-9a7f-eabe6070ef06","BetLongID":201708231525521057,"BetMulti":3,"BetUnit":1,"BetAmount":10,"BetOdds":6.779136,"BetSnapshot":"[\"山东鲁能 +1\",\"广州恒大 -1.5\",\"广州富力 -1.5\"]"}]}
+{"Result":1,"Message":"操作成功","Orders":[
+{"BetID":"9f818994-3fc5-4016-a5e5-85864ce654f3",
+"BetLongID":201708231525521057,
+"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.94,"BetSnapshot":"山东鲁能 +1"},{"BetID":"7b61668d-544e-481c-b155-7bd4e1732e72","BetLongID":201708231525521057,"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.82,"BetSnapshot":"广州恒大 -1.5"},{"BetID":"e2af1b2f-f10f-4aa9-a8b9-771e856b8859","BetLongID":201708231525521057,"BetMulti":1,"BetUnit":1,"BetAmount":100,"BetOdds":1.92,"BetSnapshot":"广州富力 -1.5"},{"BetID":"13e70b6b-645e-4b0b-892e-834f19e3499e","BetLongID":201708231525521057,"BetMulti":2,"BetUnit":3,"BetAmount":150,"BetOdds":10.7500,"BetSnapshot":"[\"山东鲁能 +1\",\"广州恒大 -1.5\",\"广州富力 -1.5\"]"},{"BetID":"9e0e1cf7-d613-4fbf-9a7f-eabe6070ef06","BetLongID":201708231525521057,"BetMulti":3,"BetUnit":1,"BetAmount":10,"BetOdds":6.779136,"BetSnapshot":"[\"山东鲁能 +1\",\"广州恒大 -1.5\",\"广州富力 -1.5\"]"}]}
 
 返回对象
 名称 	类型 	可为空 	说明
@@ -61,3 +64,7 @@ BetUnit 	int 	No 	本个注单内的串关拆单后的总数，单注或任何�
 BetAmount 	int 	No 	本格注单的总金额
 BetOdds 	decimal 	No 	单注为赔率，串关为理论上全赢的最大赔率值
 BetSnapshot 	string 	No 	投注的文字描述，可以贴给用户看的那种投注内容明细
+
+
+
+{"currencyType":"1","languageType":"1","partnerID":"100","subID":"1","userName":"1000236807"}
